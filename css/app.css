@@ -1,0 +1,142 @@
+@font-face {
+  font-family: "Fonte";
+  src: url("font/FeGPsc2.ttf"); }
+/* line 13, app.scss */
+body {
+  background: url("../img/bg.jpeg") no-repeat;
+  background-position: 50% 0;
+  background-clip: padding-box;
+  background-color: #cdcab7;
+  background-size: 1800px 1600px;
+  border-top: 2px solid rgba(255, 255, 255, 0.5);
+  background-attachment: fixed; }
+
+/* line 22, app.scss */
+.container {
+  max-width: 65%;
+  margin: auto;
+  font-family: Georgia, serif;
+  color: #e67e2d; }
+
+/* line 28, app.scss */
+a {
+  color: #fef3ae;
+  text-decoration: none; }
+  /* line 31, app.scss */
+  a:hover {
+    text-decoration: underline;
+    color: #e67e2d;
+    cursor: pointer; }
+  /* line 36, app.scss */
+  a:active {
+    text-decoration: underline; }
+
+/* line 40, app.scss */
+.header {
+  margin: auto auto 2% auto; }
+
+/* line 43, app.scss */
+h1 {
+  font-family: 'Fonte';
+  font-size: 28px;
+  font-style: italic;
+  text-shadow: 2px 2px 2px gray;
+  text-shadow: 2px 2px 2px 0.01px gray;
+  color: #efefef;
+  font-variant: small-caps;
+  letter-spacing: 2.799999952316284px;
+  white-space: pre-wrap;
+  padding: 8% 0 2% 0; }
+  /* line 54, app.scss */
+  h1:hover {
+    color: #fef3ae; }
+  /* line 57, app.scss */
+  h1 span {
+    font-size: 60px;
+    font-style: normal;
+    color: white; }
+  /* line 62, app.scss */
+  h1 a {
+    color: inherit; }
+    /* line 64, app.scss */
+    h1 a:hover {
+      text-decoration: none;
+      color: #fef3ae; }
+
+/* line 70, app.scss */
+nav.languages {
+  float: right; }
+  /* line 73, app.scss */
+  nav.languages ul {
+    background-color: rgba(255, 255, 255, 0.5);
+    display: inline-block;
+    padding: 2%;
+    width: 101%;
+    height: auto;
+    -moz-border-radius: 0 0 5px 5px;
+    -webkit-border-radius: 0;
+    border-radius: 0 0 5px 5px; }
+    /* line 80, app.scss */
+    nav.languages ul li {
+      display: inline-block;
+      float: left;
+      padding: 3%; }
+      /* line 84, app.scss */
+      nav.languages ul li::before {
+        content: '|';
+        color: #fef3ae; }
+      /* line 88, app.scss */
+      nav.languages ul li:first-child::before {
+        content: ''; }
+      /* line 91, app.scss */
+      nav.languages ul li a.active {
+        text-decoration: underline;
+        color: #e67e2d; }
+
+/* line 100, app.scss */
+nav.menu ul {
+  display: inline-block; }
+  /* line 102, app.scss */
+  nav.menu ul li {
+    display: inline-block;
+    text-shadow: 2px 2px 2px 0.01px gray;
+    font-size: 1.5em;
+    padding-right: 0.5em; }
+    /* line 107, app.scss */
+    nav.menu ul li::before {
+      content: '|';
+      padding-right: 0.5em; }
+    /* line 111, app.scss */
+    nav.menu ul li:first-child::before {
+      content: '';
+      padding-right: 0; }
+
+/* line 119, app.scss */
+.content {
+  background-color: rgba(255, 255, 255, 0.5);
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  margin: auto auto 3% auto;
+  width: 90%; }
+
+/* line 126, app.scss */
+.wordscloud {
+  margin: auto;
+  padding: 1%;
+  width: 100%;
+  display: block; }
+  /* line 131, app.scss */
+  .wordscloud img {
+    margin: auto;
+    display: block; }
+
+/* line 138, app.scss */
+.footer {
+  margin: auto;
+  padding-top: 1%;
+  background-color: rgba(255, 255, 255, 0.5);
+  -moz-border-radius: 5px 5px 0 0;
+  -webkit-border-radius: 5px;
+  border-radius: 5px 5px 0 0;
+  width: 100%; }

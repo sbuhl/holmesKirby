@@ -1,0 +1,144 @@
+@import 'compass';
+
+$yellow : #FEF3AE;
+$orange: #E67E2D;
+$white_trans : rgba(255,255,255,0.5);
+$ff: Georgia,serif;
+@font-face {
+    font-family: "Fonte";
+    src: url('font/FeGPsc2.ttf');
+}
+
+
+body {
+  background: url('../img/bg.jpeg') no-repeat ;
+  background-position: 50% 0;
+  background-clip: padding-box;
+  background-color: #cdcab7;
+  background-size: 1800px 1600px;
+  border-top: 2px solid $white_trans;
+  background-attachment:fixed;
+}
+.container{
+  max-width: 65%;
+  margin: auto;
+  font-family: $ff;
+  color: $orange;
+}
+a{
+  color: $yellow;
+  text-decoration: none;
+  &:hover{
+    text-decoration: underline;
+    color: $orange;
+    cursor: pointer;
+  }
+  &:active{
+    text-decoration: underline;
+  }
+}
+.header{
+  margin: auto auto 2% auto;
+}
+h1{
+    font-family:'Fonte';
+    font-size:28px;
+    font-style:italic;
+    text-shadow:2px 2px 2px rgb(128,128,128);
+    text-shadow:2px 2px 2px 0.01px rgb(128,128,128);
+    color:rgb(239,239,239);
+    font-variant:small-caps;
+    letter-spacing: 2.799999952316284px;
+    white-space: pre-wrap;
+    padding:8% 0 2% 0;
+    &:hover{
+      color: $yellow;
+    }
+    span{
+      font-size:60px;
+      font-style:normal;
+      color:rgb(255,255,255);
+    }
+    a{
+      color: inherit;
+      &:hover{
+        text-decoration: none;
+        color: $yellow;
+      }
+    }
+}
+nav.languages{
+  float: right;
+
+  ul{
+    background-color:$white_trans;
+    display: inline-block;
+    padding: 2%;
+    width: 101%;
+    height: auto;
+    @include border-radius(0 0 5px 5px);
+    li{
+      display: inline-block;
+      float:left;
+      padding: 3%;
+      &::before{
+        content: '|';
+        color: $yellow;
+      }
+      &:first-child::before{
+        content:'';
+      }
+      a.active{
+         text-decoration: underline;
+         color: $orange;
+      }
+    }
+  }
+}
+
+nav.menu{
+  ul{
+    display: inline-block;
+    li{
+      display: inline-block;
+      text-shadow:2px 2px 2px 0.01px rgb(128,128,128);
+      font-size: 1.5em;
+      padding-right:0.5em;
+      &::before{
+        content: '|';
+        padding-right:0.5em;
+      }
+      &:first-child::before{
+        content:'';
+        padding-right:0;
+      }
+    }
+  }
+}
+
+.content{
+  background-color: $white_trans;
+  @include border-radius(5px);
+  margin:auto auto 3% auto;
+  width: 90%;
+}
+
+.wordscloud{
+  margin:auto;
+  padding:1%;
+  width: 100%;
+  display: block;
+  img{
+    margin:auto;
+    display: block;
+
+  }
+}
+
+.footer{
+  margin:auto;
+  padding-top:1%;
+  background-color: $white_trans;
+  @include border-radius(5px 5px 0 0);
+  width: 100%;
+}
